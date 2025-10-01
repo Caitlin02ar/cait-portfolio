@@ -16,7 +16,7 @@ export default function Contact() {
         {/* Email */}
         <div className="mt-6">
             <motion.a
-            href="mailto:caitlinliadi@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=caitlinliadi@gmail.com"
             whileHover={{ scale: 1.1, rotate: -2 }}
             whileTap={{ scale: 0.95 }}
             className="inline-flex w-full sm:w-auto justify-center items-center gap-2 border rounded-md px-4 py-2 text-gray-700 hover:bg-gray-100 transition"
@@ -28,7 +28,7 @@ export default function Contact() {
 
         {/* Social Media */}
         <div className="mt-6">
-            <p className="text-gray-500 mb-3">Other media social</p>
+            <p className="text-gray-500 mb-3">Other social media</p>
             <div className="flex justify-center gap-4">
             <a href="https://www.linkedin.com/in/caitlin-liadi/" target="_blank" rel="noopener noreferrer">
                 <img src="/LinkedIn.svg" alt="LinkedIn" className="w-6 h-6 transition-transform duration-300 hover:scale-125 hover:rotate-6" />

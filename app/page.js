@@ -23,13 +23,13 @@ export default function Home() {
 
         {/* Social Icons */}
         <div className="inline-flex gap-4 px-6 py-3 border rounded-full shadow-sm justify-center">
-          <a href="https://www.linkedin.com/in/caitlin-liadi/"><img src="/LinkedIn.svg" alt="LinkedIn" className="w-6 h-6 transition-transform duration-300 hover:scale-125 hover:rotate-6" /></a>
-          <a href="#"><img src="/Gmail.svg" alt="Gmail" className="w-6 h-6 transition-transform duration-300 hover:scale-125 hover:rotate-6" /></a>
-          <a href="https://www.instagram.com/designedby.cait/"><img src="/Instagram.svg" alt="Instagram" className="w-6 h-6 transition-transform duration-300 hover:scale-125 hover:rotate-6" /></a>
-          <a href="https://x.com/designedby_cait"><img src="/Twitter.svg" alt="Twitter" className="w-6 h-6 transition-transform duration-300 hover:scale-125 hover:rotate-6" /></a>
-          <a href="https://www.behance.net/caitlinliadi"><img src="/Behance.svg" alt="Behance" className="w-6 h-6 transition-transform duration-300 hover:scale-125 hover:rotate-6" /></a>
-          <a href="https://dribbble.com/caitlinliadi"><img src="/Dribbble.svg" alt="Dribbble" className="w-6 h-6 transition-transform duration-300 hover:scale-125 hover:rotate-6" /></a>
-          <a href="https://www.figma.com/@cheesielle"><img src="/Figma.svg" alt="Figma" className="w-6 h-6 transition-transform duration-300 hover:scale-125 hover:rotate-6" /></a>
+          <a href="https://www.linkedin.com/in/caitlin-liadi/" target="_blank" rel="noopener noreferrer"><img src="/LinkedIn.svg" alt="LinkedIn" className="w-6 h-6 transition-transform duration-300 hover:scale-125 hover:rotate-6" /></a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=caitlinliadi@gmail.com" target="_blank" rel="noopener noreferrer"><img src="/Gmail.svg" alt="Gmail" className="w-6 h-6 transition-transform duration-300 hover:scale-125 hover:rotate-6" /></a>
+          <a href="https://www.instagram.com/designedby.cait/" target="_blank" rel="noopener noreferrer"><img src="/Instagram.svg" alt="Instagram" className="w-6 h-6 transition-transform duration-300 hover:scale-125 hover:rotate-6" /></a>
+          <a href="https://x.com/designedby_cait" target="_blank" rel="noopener noreferrer"><img src="/Twitter.svg" alt="Twitter" className="w-6 h-6 transition-transform duration-300 hover:scale-125 hover:rotate-6" /></a>
+          <a href="https://www.behance.net/caitlinliadi" target="_blank" rel="noopener noreferrer"><img src="/Behance.svg" alt="Behance" className="w-6 h-6 transition-transform duration-300 hover:scale-125 hover:rotate-6" /></a>
+          <a href="https://dribbble.com/caitlinliadi" target="_blank" rel="noopener noreferrer"><img src="/Dribbble.svg" alt="Dribbble" className="w-6 h-6 transition-transform duration-300 hover:scale-125 hover:rotate-6" /></a>
+          <a href="https://www.figma.com/@cheesielle" target="_blank" rel="noopener noreferrer"><img src="/Figma.svg" alt="Figma" className="w-6 h-6 transition-transform duration-300 hover:scale-125 hover:rotate-6" /></a>
         </div>
       </section>
 
@@ -98,57 +98,154 @@ export default function Home() {
         <ProjectCard
           title="Point of Sales & Inventory Application"
           company="PT. Cross Network Indonesia"
-          tags={["Python", "React"]}
-          image="/pos-app-preview.png"
-          link="#"
-          description="A web-based Point of Sales and inventory control system with ABC-VED analysis and 
+          tags={["Python", "React", "Flask", "MySQL"]}
+          image="/PosApp.png"
+          link="https://www.behance.net/gallery/235721637/Point-of-Sales-Inventory-Application"
+          description="A web-based Point of Sales and Inventory Control system with ABC-VED analysis and 
         reorder point calculation for store operations."
         />
 
         <ProjectCard
-        title="LactoConnect Prototype Application"
-        company="Petra Christian University"
-        tags={["Figma", "Case Study"]}
+        title="LACTOCONNECT Mobile App"
+        company="School Project"
+        tags={["Figma", "UI/UX", "Design System", "Case Study"]}
         image="/LactoConnect.png"
-        link="#"
-        description="Created prototype for case study"
-        />
-
+        link="https://www.behance.net/gallery/230066717/LactoConnect-Study-Case-Project-Prototype"
+        description={
+          <>
+            Collaborated in a team to design a mobile app for breastfeeding support, donor search, and consultations.
+            <br /><br />
+            <strong>My Contributions:</strong>
+            <ul className="list-disc ml-5">
+              <li>Defined core features & structure</li>
+              <li>Created user flows & wireframes</li>
+              <li>Designed high-fidelity mockups</li>
+              <li>Built design system</li>
+            </ul>
+            <br />
+            <strong>What I Learned:</strong>  
+            <ul className="list-disc ml-5">
+              <li>Designing digital solutions that address real user needs</li>
+              <li>Building structured design systems for consistency</li>
+              <li>Translating research into practical UI/UX decisions</li>
+            </ul>
+          </>
+        }
+      />
         <ProjectCard 
-        title="E-Commercce Dashboard"
+        title="E-Commerce Dashboard"
         company="Petra Christian University"
         tags={["Power BI", "Case Study"]}
         image="/DashboardProject.png"
         link="#"
-        description="Created "
+        disableView={true}
+        description={
+          <>
+            Collaborated in a group project to practice data cleaning and visualization.  
+            I focused on designing a Power BI dashboard for shipment KPIs.  
+            <br /><br />
+            <strong>My Contributions:</strong>
+            <ul className="list-disc ml-5">
+              <li>Cleaned and transformed shipment data</li>
+              <li>Created KPI visuals with DAX</li>
+              <li>Built interactive filters for analysis</li>
+            </ul>
+            <br />
+            <strong>What I Learned: </strong>
+            Learned to design digital solutions that address real user needs and can positively impact people’s lives.          </>
+        }
         />
 
         <ProjectCard
-        title="Community Web Application"
-        company="PT. Cross Network Indonesia"
-        tags={["Figma", "Svelte", "Intern", "UI Design"]}
-        image=""
-        link="#"
-        description="Developed a web-friendly community app for PT. Cross Network Indonesia, used for registering and managing community events."
+          title="Retreat Web Application"
+          company="Petra Christian University"
+          tags={["Figma", "Svelte", "JavaScript", "UI/UX Designer"]}
+          image="/RetreatApplication.png"
+          link="#"
+          disableView={true}
+          description={
+            <>
+              Collaborative project to design and build a retreat management system for SEP community, enabling online registration, payment, and event management.  
+              <br /><br />
+              <strong>My Contributions:</strong>
+              <ul className="list-disc ml-5">
+                <li>Designed overall system solution with the team</li>
+                <li>Led UI/UX design (flows, wireframes, mockups, design system)</li>
+                <li>Implemented several frontend pages with Svelte</li>
+              </ul>
+              <br/>
+              Disclaimer: The project has since been further developed by the company, beyond my internship involvement.
+            </>
+          }
+        />
+        <ProjectCard
+          title="Community Web Application"
+          company="PT. Cross Network Indonesia"
+          tags={["Figma", "Svelte", "Intern", "UI Design"]}
+          image="/CommunityApp.png"
+          link="#"
+          disableView={true}
+          description={
+            <>
+              Developed a web-friendly community app for PT. Cross Network Indonesia, used for registering and managing community events.
+              <br /><br />
+              <strong>My Contributions:</strong>
+              <ul className="list-disc ml-5">
+                <li>Designed booking flow and event UI</li>
+                <li>Developed selected responsive frontend pages using Svelte</li>
+                <li>Collaborated with backend team</li>
+              </ul>
+              <br/>
+              Disclaimer: The project has since been further developed by the company, beyond my internship involvement.
+            </>
+          }
+        />
+        <ProjectCard
+          title="Cooperative User Interface"
+          company="PT. Cross Network Indonesia"
+          tags={["Figma", "Cooperative", "Intern", "UI/UX Designer"]}
+          image="/CooperativeApp.png"
+          link="#"
+          disableView={true}
+          description={
+            <>
+              Collaborated with UI/UX team to design a cooperative platform (mobile & web) focusing on accessibility and usability.  
+              <br /><br />
+              <strong>My Contributions:</strong>
+              <ul className="list-disc ml-5">
+                <li>Focused on designing the mobile interface</li>
+                <li>Ensured responsive UI with clear navigation</li>
+                <li>Built reusable components for developer handoff</li>
+              </ul>
+              <br/>
+              Disclaimer: The project has since been further developed by the company, beyond my internship involvement.
+            </>
+          }
+        />
+        <ProjectCard
+          title="Multi-application Factory System"
+          company="PT. Cross Network Indonesia"
+          tags={["Figma", "Intern", "UI Design", "Case Study"]}
+          image="/MultiApp.png"
+          link="#"
+          disableView={true}
+          description={
+            <>
+              Collaborated with a UI/UX team to design an integrated factory system.  
+              I focused on the warehouse and producer modules for the web interface.  
+              <br /><br />
+              <strong>My Contributions:</strong>
+              <ul className="list-disc ml-5">
+                <li>Designed warehouse management UI</li>
+                <li>Created producer-side web interface</li>
+                <li>Ensured consistency with team’s design system</li>
+              </ul>
+              <br/>
+              Disclaimer: The project has since been further developed by the company, beyond my internship involvement.
+            </>
+          }
         />
 
-        <ProjectCard
-        title="Cooperative User Interface"
-        company="PT. Cross Network Indonesia"
-        tags={["Figma", "Cooperative", "Intern", "UI Design"]}
-        image=""
-        link="#"
-        description="Designed a digital platform for a local cooperative including both mobile and web versions, focused on accessibility and usability."
-        />
-
-        <ProjectCard
-        title="Multi-application Factory System"
-        company="PT. Cross Network Indonesia"
-        tags={["Figma", "Intern", "UI Design"]}
-        image=""
-        link="#"
-        description="Built a Point of Sales and Inventory Control system from scratch for my final project. Designed to support both retail and wholesale business models."
-        />
       </section>
 
       {/* Contact */}
