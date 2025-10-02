@@ -205,8 +205,7 @@ export default function Home() {
           company="PT. Cross Network Indonesia"
           tags={["Figma", "Cooperative", "Intern", "UI/UX Designer"]}
           image="/CooperativeApp.png"
-          link="#"
-          disableView={true}
+          link="https://www.behance.net/gallery/235730149/User-Interface-Cooperative-App-Mobile"
           description={
             <>
               Collaborated with UI/UX team to design a cooperative platform (mobile & web) focusing on accessibility and usability.  
