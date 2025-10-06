@@ -67,6 +67,18 @@ export default function Home() {
             <BadgeIcon 
             icon={<img src="/CSS.svg" alt="CSS" className="w-4 h-4"/>}
             label="CSS"/>
+            <BadgeIcon 
+            icon={<img src="/Excel.svg" alt="CSS" className="w-4 h-4"/>}
+            label="Excel"
+            />
+            <BadgeIcon 
+            icon={<img src="/Word.svg" alt="CSS" className="w-4 h-4"/>}
+            label="Word"
+            />
+            <BadgeIcon 
+            icon={<img src="/PowerPoint.svg" alt="CSS" className="w-4 h-4"/>}
+            label="PowerPoint"
+            />
             
           </div>
         </div>
