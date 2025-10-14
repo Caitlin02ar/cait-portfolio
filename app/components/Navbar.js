@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
-  const menuItems = ["About Me", "Skills", "Experience", "Projects", "Contact"];
+  const menuItems = ["About Me", "Skills", "Experience", "Projects", "Contact", "My Playground"];
 
   return (
     <header className="w-full fixed top-0 left-0 

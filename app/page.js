@@ -4,6 +4,9 @@ import Contact from "./components/Contact";
 import ExperienceBox from "./components/ExperienceBox";
 import ProjectCard from "./components/ProjectCard";
 import { motion } from "framer-motion";
+import MyPlayground from "./components/MyPlayground";
+import UpcomingProjects from "./components/UpComingProject";
+import TypewriterText from "./components/TypewriterText";
 
 export default function Home() {
   return (
@@ -12,8 +15,10 @@ export default function Home() {
       {/* About Me */}
       <section id="about-me" className="text-center max-w-2xl mb-16">
         <Badge text="About Me" />
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 mt-12">Hi! I’m Caitlin</h1>
-        <p className="text-gray-600 mb-8">
+        <TypewriterText
+          text="Hi! I’m Caitlin"
+          className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 mt-12"
+        />        <p className="text-gray-600 mb-8">
           I’m passionate about UI/UX design and enjoy turning ideas into digital solutions.
           My work has centered on designing user experiences, from wireframes to
           interactive prototypes. I’m also developing skills in frontend development and
@@ -256,8 +261,18 @@ export default function Home() {
             </>
           }
         />
+        <UpcomingProjects />
+
 
       </section>
+
+      <section id="my-playground">
+        <Badge text="My Playground"
+        />
+      </section>
+      <MyPlayground/>
+
+
 
       {/* Contact */}
       <section id="contact" className="w-full max-w-4xl mb-16 text-center">
