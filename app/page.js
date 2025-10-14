@@ -3,7 +3,6 @@ import BadgeIcon from "./components/BadgeIcon";
 import Contact from "./components/Contact";
 import ExperienceBox from "./components/ExperienceBox";
 import ProjectCard from "./components/ProjectCard";
-import { motion } from "framer-motion";
 import MyPlayground from "./components/MyPlayground";
 import UpcomingProjects from "./components/UpComingProject";
 import TypewriterText from "./components/TypewriterText";
