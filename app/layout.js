@@ -27,13 +27,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body className="bg-white-950 text-black font-inter min-h-screen flex flex-col">
         {/* Navbar dengan glassmorphism effect */}
         <Navbar/>
 
         {/* Main content dengan flex-grow */}
-        <main className="flex-grow">
+        <main className="flex-grow pt-16">
           {children}
         </main>
         <footer className="border-t border-gray-200 py-6 text-center text-gray-500 text-sm">

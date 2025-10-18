@@ -14,22 +14,6 @@ export default function UpcomingProjects() {
             I’m currently exploring new ideas — stay tuned for what’s next!
             </p>
         </div>
-
-        <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="rounded-2xl border border-gray-200 bg-white/60 backdrop-blur-sm shadow-sm p-12"
-        >
-            <motion.div
-            animate={{ opacity: [0.5, 1, 0.5] }}
-            transition={{ repeat: Infinity, duration: 2 }}
-            className="text-lg text-gray-600"
-            >
-            Something exciting is in the works ✨
-            </motion.div>
-        </motion.div>
         </section>
     );
 }

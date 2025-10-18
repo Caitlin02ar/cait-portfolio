@@ -3,47 +3,92 @@ import { motion } from "framer-motion"
 
 export default function Contact() {
     return (
-        <section className="text-center mt-12">
-        {/* Title */}
-        <h2 className="text-2xl md:text-3xl font-semibold mt-6">
-            Let’s connect and create something impactful together. 💬
-        </h2>
+        <section className="relative w-screen -mx-[calc((100vw-100%)/2)] py-12 md:py-16 overflow-hidden">
+            <motion.div
+                className="absolute inset-0 bg-gradient-to-b from-white via-orange-50 to-rose-50"
+                animate={{
+                backgroundPosition: ["0% 0%", "100% 100%", "0% 0%"],
+                }}
+                transition={{
+                duration: 10,
+                repeat: Infinity,
+                ease: "linear",
+                }}
+                style={{
+                backgroundSize: "200% 200%",
+                }}
+            />
 
-        <p className="text-gray-600 mt-2">
-            Open to opportunities, freelance projects and creative collaborations!
-        </p>
+            <motion.div
+                className="absolute top-10 left-1/4 w-72 h-72 bg-pink-200 opacity-30 rounded-full blur-3xl"
+                animate={{ y: [0, -20, 0], scale: [1, 1.05, 1] }}
+                transition={{ duration: 8, repeat: Infinity }}
+            />
+            <motion.div
+                className="absolute bottom-10 right-1/4 w-72 h-72 bg-blue-200 opacity-30 rounded-full blur-3xl"
+                animate={{ y: [0, 20, 0], scale: [1, 1.1, 1] }}
+                transition={{ duration: 10, repeat: Infinity }}
+            />
 
-        {/* Email */}
-        <div className="mt-6">
-            <motion.a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=caitlinliadi@gmail.com"
-            whileHover={{ scale: 1.1, rotate: -2 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-flex w-full sm:w-auto justify-center items-center gap-2 border rounded-md px-4 py-2 text-gray-700 hover:bg-gray-100 transition"
-            >
-            <img src="/Gmail.svg" className="w-6 h-6" alt="Gmail" />
-            caitlinliadi@gmail.com
-            </motion.a>
-        </div>
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7 }}
+                viewport={{ once: true }}
+                className="relative z-10 max-w-xl mx-auto px-6">
+                {/* Title */}
+                <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
+                Let’s collaborate to create intuitive and impactful digital experiences. 💬
+                </h2>
 
-        {/* Social Media */}
-        <div className="mt-6">
-            <p className="text-gray-500 mb-3">Other social media</p>
-            <div className="flex justify-center gap-4">
-            <a href="https://www.linkedin.com/in/caitlin-liadi/" target="_blank" rel="noopener noreferrer">
-                <img src="/LinkedIn.svg" alt="LinkedIn" className="w-6 h-6 transition-transform duration-300 hover:scale-125 hover:rotate-6" />
-            </a>
-            <a href="https://www.instagram.com/designedby.cait/" target="_blank" rel="noopener noreferrer">
-                <img src="/Instagram.svg" alt="Instagram" className="w-6 h-6 transition-transform duration-300 hover:scale-125 hover:rotate-6" />
-            </a>
-            <a href="https://x.com/designedby_cait" target="_blank" rel="noopener noreferrer">
-                <img src="/Twitter.svg" alt="Twitter" className="w-6 h-6 transition-transform duration-300 hover:scale-125 hover:rotate-6" />
-            </a>
-            <a href="https://www.behance.net/caitlinliadi" target="_blank" rel="noopener noreferrer">
-                <img src="/Behance.svg" alt="Behance" className="w-6 h-6 transition-transform duration-300 hover:scale-125 hover:rotate-6" />
-            </a>
-            </div>
-        </div>
+                <p className="text-gray-600 mt-3">
+                Currently open to full-time and freelance design opportunities!
+                </p>
+
+                {/* Email */}
+                <div className="mt-8">
+                <motion.a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=caitlinliadi@gmail.com"
+                    whileHover={{ scale: 1.05, rotate: -1 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="inline-flex w-full sm:w-auto justify-center items-center gap-2 border border-gray-300 bg-white rounded-md px-5 py-3 text-gray-800 font-medium hover:bg-gray-50 shadow-sm transition"
+                >
+                    <img src="/Mail.svg" className="w-6 h-6" alt="Gmail" />
+                    caitlinliadi@gmail.com
+                </motion.a>
+                </div>
+
+                {/* Social Media */}
+                <div className="mt-8">
+                <p className="text-gray-500 mb-3 text-sm">Other social media</p>
+                <div className="flex flex-wrap gap-4 sm:gap-5 justify-center">
+                    {[
+                    { icon: "/LinkedOutline.svg", label: "LinkedIn", href: "https://www.linkedin.com/in/caitlin-liadi/" },
+                    { icon: "/InstagramOutline.svg", label: "Instagram", href: "https://www.instagram.com/designedby.cait/" },
+                    { icon: "/TwitterOutline.svg", label: "Twitter", href: "https://x.com/designedby_cait" },
+                    { icon: "/BehanceOutline.svg", label: "Behance", href: "https://www.behance.net/caitlinliadi" },
+                    ].map((social, i) => (
+                    <a
+                        key={i}
+                        href={social.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group relative p-3 sm:p-4 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 sm:hover:scale-110 hover:rotate-3 sm:hover:rotate-6"
+                        style={{ animationDelay: `${i * 100}ms` }}
+                    >
+                        <img
+                        src={social.icon}
+                        alt={social.label}
+                        className="w-5 h-5 sm:w-6 sm:h-6 group-hover:scale-110 transition-transform duration-300"
+                        />
+                        <span className="absolute -top-9 sm:-top-10 left-1/2 -translate-x-1/2 bg-slate-800 text-white text-xs sm:text-sm px-2 sm:px-3 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                        {social.label}
+                        </span>
+                    </a>
+                    ))}
+                </div>
+                </div>
+            </motion.div>
         </section>
-    );
+    )
 }

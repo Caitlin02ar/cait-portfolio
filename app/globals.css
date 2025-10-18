@@ -81,3 +81,15 @@
 html {
   scroll-behavior: smooth;
 }
+
+.section-container {
+  @apply w-full max-w-4xl mx-auto px-4 sm:px-6 md:px-8;
+}
+
+.section-full {
+  @apply w-screen -mx-[calc((100vw-100%)/2)];
+}
+
+.section-spacing {
+  @apply py-8;
+}
